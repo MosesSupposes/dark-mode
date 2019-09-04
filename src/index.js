@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
-import CoinList from './components/CoinList'
+import CoinsPage1 from './components/CoinsLists/CoinsPage1'
+import CoinsPage2 from './components/CoinsLists/CoinsPage2'
+import CoinsPage3 from './components/CoinsLists/CoinsPage3'
+import CoinsPage4 from './components/CoinsLists/CoinsPage4'
 
 import "./styles.scss";
 
@@ -31,7 +34,10 @@ const App = () => {
   return (
     <>
     <Route exact path="/" component={App} />
-    <Route path="/coins" component={CoinList} />
+    <Route path="/coins/1" component={CoinsPage1} />
+    <Route path="/coins/2" component={CoinsPage2} />
+    <Route path="/coins/3" component={CoinsPage3} />
+    <Route path="/coins/4" component={CoinsPage4} />
     </>
   );
 };
