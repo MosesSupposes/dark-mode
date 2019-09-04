@@ -1,10 +1,12 @@
 import React from 'react'
 import useCoinList from '../../hooks/useCoinList'
+import { Link } from 'react-router-dom'
 
 export default function CoinsPage4(props) {
     const coins = useCoinList()
     
     return (
+        <>
         <ul className="coin-list">
             {coins.slice(75, 100).map(function renderTokens(coin) {
                 return (
@@ -18,5 +20,8 @@ export default function CoinsPage4(props) {
                 ) 
             })}
         </ul>
+
+        <Link to="/coins/3">⬅️</Link>
+        </>
     )
 }
