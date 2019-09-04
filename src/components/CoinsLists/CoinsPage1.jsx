@@ -22,7 +22,9 @@ export default function CoinsPage1(props) {
             })}
         </ul>
 
-        <Link to="/coins/2">➡️</Link>
+        <div className="pagination-buttons">
+            <Link to="/coins/2">➡️</Link>
+        </div>
         </>
     )
 }
