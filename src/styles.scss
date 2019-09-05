@@ -251,3 +251,13 @@ text-align: left;
     border: none;
   }
 }
+
+.pagination-buttons {
+  display: flex; 
+  justify-content: center;
+
+    a {
+      font-size: 5rem;     
+      margin-left: 2rem;
+    }
+}
